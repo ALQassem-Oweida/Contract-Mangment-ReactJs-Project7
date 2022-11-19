@@ -1,0 +1,102 @@
+.open-btn{
+    padding: 10px 10px;
+    font-size: 10px;
+}
+.cover {
+  
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(59, 55, 55, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+
+}
+
+.popup-body {
+    position: absolute;
+    min-width: 800px;
+    max-width: 1000px;
+    padding: 10px 20px;
+    background: #ffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+
+    
+}
+/* 
+.close-btn {
+    position: absolute;
+    padding: 3px 6px;
+    top: 10px;
+    right: 10px;
+} */
+
+button{
+    border: 1px solid #18d26e;
+}
+button i{
+    margin-top: -5px;
+}
+.btn{
+    /* background: #18d26e; */
+    border: 0;
+    /* padding: 10px 30px; */
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+  
+}
+.btn1{
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 80px;
+    right: 200px;
+}
+
+
+  /* .btn:hover {
+    background: #13a456;
+   
+  } */
+  
+form button[type="submit"] {
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+ form button[type="submit"]:hover {
+    background: #13a456;
+  }
+  button[type="submit"] {
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background: #13a456;
+  }
+.space{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
