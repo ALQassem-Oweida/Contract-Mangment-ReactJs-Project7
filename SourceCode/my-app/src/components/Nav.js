@@ -32,7 +32,9 @@ function Nav() {
      
 
         
-        {sessionStorage.getItem("username")!== null?<><li><Link className="navbar-brand" to='/Contract'>Contarcts</Link></li>{sessionStorage.getItem('role')==="admin"?<li><Link className="navbar-brand" to='/Admindashboard'>Dashbord</Link></li>:<> </>}<li><Link  className="navbar-brand" to='/Userprofile'>{sessionStorage.getItem('username')} </Link></li><li><button className="logout" onClick={logout} >LOGOUT</button></li></>
+        {sessionStorage.getItem("username")!== null?<><li><Link className="navbar-brand" to='/Contract'>Contarcts</Link></li>
+        {sessionStorage.getItem('role')==="admin"?<li><Link className="navbar-brand" to='/Admindashboard'>Dashbord</Link></li>
+        :<> </>}<li><Link  className="navbar-brand" to='/Userprofile'>{sessionStorage.getItem('username')} </Link></li><li><button className="logout" onClick={logout} >LOGOUT</button></li></>
         :<><li ><Link  className="navbar-brand" to='/Signup'>Signup</Link></li><li><Link  className="navbar-brand" to='/Login'>Login</Link></li></>}
 
 

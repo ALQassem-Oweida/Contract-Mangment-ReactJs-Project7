@@ -45,6 +45,7 @@ export default function Contract(props) {
               />
             </div>
             <div className="form-group ">
+            <label>Officer Name</label>
               <input
                 type="text"
                 className="form-control"
@@ -58,6 +59,7 @@ export default function Contract(props) {
             </div>
 
             <div className="form-group">
+              <label>Employee Number</label>
               <input
                 type="number"
                 className="form-control"
@@ -134,6 +136,26 @@ export default function Contract(props) {
                 required
               />
             </div>
+
+            <div className="form-group">
+              <textarea 
+                 type="text"
+                 rows={2}
+                 className="form-control"
+                 name="description"
+                 id="description"
+                 placeholder="Description"
+                 onChange={handleChange}
+                 required>
+             
+                </textarea>
+            </div>
+
+
+
+
+
+
             <div className="form-group">
               <input
                 type="number"

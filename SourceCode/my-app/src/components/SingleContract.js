@@ -42,11 +42,11 @@ if(x<=10 && x>3){  classNamex="moving alert-warning"}else if(x<3){ classNamex="m
 
               <div className="details">
                 <div className="user">
-                  <div className="name"><b >{user.officerName}</b></div>
+                  <div className="name"><b >Officer Name : {user.officerName}</b></div><br/>
                 </div>
                 <div className="numbers">
-                  <b > Start Date :{user.startdate}</b><br />
-                  <b >End Date :{user.enddate}</b>
+                  <b style={{color:'green'}} > Start Date :{user.startdate}</b><br />
+                  <b style={{color:'red'}} > End Date :{user.enddate}</b>
                 </div>
                 <div className="clearfix" />
               </div>
@@ -54,7 +54,7 @@ if(x<=10 && x>3){  classNamex="moving alert-warning"}else if(x<3){ classNamex="m
             <div className="card-info ">
               <div className={classNamex}>
 
-                <h3>{user.contractName}</h3>
+                <h3>Contract Name : {user.contractName}</h3>
                 <p>Days Until Contract End : {x} Days</p>
 
 
@@ -80,7 +80,8 @@ if(x<=10 && x>3){  classNamex="moving alert-warning"}else if(x<3){ classNamex="m
                     <tr>Start Date : {user.startdate}</tr>
                     <tr>End Data : {user.enddate}</tr>
                     <tr>Total Cost : {user.totalCost}</tr>
-                    <tr>Total Cost : {user.totalCost}</tr>
+                    <tr>Description : {user.description}</tr>
+                
                   </Modal.Body>
                   <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
@@ -111,6 +112,7 @@ if(x<=10 && x>3){  classNamex="moving alert-warning"}else if(x<3){ classNamex="m
                     <Modal.Title>Company Details</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>
+                  <tr>Company Name: {user.companyName}</tr>
                     <tr>Company Location: {user.companyLocation}</tr>
                     <tr>Company Employee Name :  {user.companyEmployeeName}</tr>
                     <tr>Company Number : {user.companyNumber}</tr>

@@ -81,21 +81,13 @@ const E  = () => {
 <div>
 <label for="exampleInputEmail1"  class="form-label">Start Date:</label> 
 <input disabled type="text"className="form-control" value={inputs.startdate} />
-<label for="exampleInputEmail1"  class="form-label">New Start Date:</label> 
-
-<input type="date"className="form-control" 
-onChange={handleChange}
- name="startdate"  required /></div> 
+ </div> 
 
 
 <div className="form-group mt-3">
 <label for="exampleInputEmail1"  class="form-label">End Date:</label> 
 <input disabled type="text"className="form-control" value={inputs.enddate} />
-<label for="exampleInputEmail1" class="form-label">New End Date:</label> 
-        <input type="date" 
-        onChange={handleChange}
- className="form-control"   name="enddate"required/></div>
- 
+</div>
 </div>
 
 
